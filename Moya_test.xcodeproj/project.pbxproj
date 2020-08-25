@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		75383EE124F4EB4600ADA8F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75383EDF24F4EB4600ADA8F0 /* Main.storyboard */; };
 		75383EE324F4EB4800ADA8F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75383EE224F4EB4800ADA8F0 /* Assets.xcassets */; };
 		75383EE624F4EB4800ADA8F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75383EE424F4EB4800ADA8F0 /* LaunchScreen.storyboard */; };
+		75383EEF24F4F32700ADA8F0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75383EEE24F4F32700ADA8F0 /* API.swift */; };
+		75383EF124F4F33D00ADA8F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75383EF024F4F33D00ADA8F0 /* NetworkManager.swift */; };
+		75383EF324F4F34D00ADA8F0 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75383EF224F4F34D00ADA8F0 /* MoyaConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		75383EE224F4EB4800ADA8F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75383EE524F4EB4800ADA8F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75383EE724F4EB4800ADA8F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75383EEE24F4F32700ADA8F0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		75383EF024F4F33D00ADA8F0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		75383EF224F4F34D00ADA8F0 /* MoyaConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
 		86B08824A23FF05CC44A2D17 /* Pods-Moya_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya_test.release.xcconfig"; path = "Target Support Files/Pods-Moya_test/Pods-Moya_test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +54,6 @@
 				25CD02DC4EBBB4B5F830AB5E /* Pods-Moya_test.debug.xcconfig */,
 				86B08824A23FF05CC44A2D17 /* Pods-Moya_test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +86,7 @@
 		75383ED824F4EB4600ADA8F0 /* Moya_test */ = {
 			isa = PBXGroup;
 			children = (
+				75383EED24F4F2E300ADA8F0 /* Router */,
 				75383ED924F4EB4600ADA8F0 /* AppDelegate.swift */,
 				75383EDB24F4EB4600ADA8F0 /* SceneDelegate.swift */,
 				75383EDD24F4EB4600ADA8F0 /* ViewController.swift */,
@@ -90,6 +96,16 @@
 				75383EE724F4EB4800ADA8F0 /* Info.plist */,
 			);
 			path = Moya_test;
+			sourceTree = "<group>";
+		};
+		75383EED24F4F2E300ADA8F0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				75383EEE24F4F32700ADA8F0 /* API.swift */,
+				75383EF024F4F33D00ADA8F0 /* NetworkManager.swift */,
+				75383EF224F4F34D00ADA8F0 /* MoyaConfig.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +225,9 @@
 			files = (
 				75383EDE24F4EB4600ADA8F0 /* ViewController.swift in Sources */,
 				75383EDA24F4EB4600ADA8F0 /* AppDelegate.swift in Sources */,
+				75383EF124F4F33D00ADA8F0 /* NetworkManager.swift in Sources */,
+				75383EF324F4F34D00ADA8F0 /* MoyaConfig.swift in Sources */,
+				75383EEF24F4F32700ADA8F0 /* API.swift in Sources */,
 				75383EDC24F4EB4600ADA8F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
