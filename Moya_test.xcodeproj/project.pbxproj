@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		531338ECBB8C5F3E9741B0E5 /* Pods_Moya_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DF7E9D694A9CF99B11F04F /* Pods_Moya_test.framework */; };
 		75383EDA24F4EB4600ADA8F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75383ED924F4EB4600ADA8F0 /* AppDelegate.swift */; };
 		75383EDC24F4EB4600ADA8F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75383EDB24F4EB4600ADA8F0 /* SceneDelegate.swift */; };
 		75383EDE24F4EB4600ADA8F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75383EDD24F4EB4600ADA8F0 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03DF7E9D694A9CF99B11F04F /* Pods_Moya_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CD02DC4EBBB4B5F830AB5E /* Pods-Moya_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya_test.debug.xcconfig"; path = "Target Support Files/Pods-Moya_test/Pods-Moya_test.debug.xcconfig"; sourceTree = "<group>"; };
 		75383ED624F4EB4600ADA8F0 /* Moya_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moya_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75383ED924F4EB4600ADA8F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75383EDB24F4EB4600ADA8F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		75383EE224F4EB4800ADA8F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75383EE524F4EB4800ADA8F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75383EE724F4EB4800ADA8F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86B08824A23FF05CC44A2D17 /* Pods-Moya_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya_test.release.xcconfig"; path = "Target Support Files/Pods-Moya_test/Pods-Moya_test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531338ECBB8C5F3E9741B0E5 /* Pods_Moya_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ED8B6F48BE4205650CF60D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25CD02DC4EBBB4B5F830AB5E /* Pods-Moya_test.debug.xcconfig */,
+				86B08824A23FF05CC44A2D17 /* Pods-Moya_test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		154F083B5D8EFA6309648427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03DF7E9D694A9CF99B11F04F /* Pods_Moya_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		75383ECD24F4EB4600ADA8F0 = {
 			isa = PBXGroup;
 			children = (
 				75383ED824F4EB4600ADA8F0 /* Moya_test */,
 				75383ED724F4EB4600ADA8F0 /* Products */,
+				0ED8B6F48BE4205650CF60D9 /* Pods */,
+				154F083B5D8EFA6309648427 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75383EEA24F4EB4800ADA8F0 /* Build configuration list for PBXNativeTarget "Moya_test" */;
 			buildPhases = (
+				18344847563B2B8C351F95A5 /* [CP] Check Pods Manifest.lock */,
 				75383ED224F4EB4600ADA8F0 /* Sources */,
 				75383ED324F4EB4600ADA8F0 /* Frameworks */,
 				75383ED424F4EB4600ADA8F0 /* Resources */,
+				00145CBD10054E2161FA484F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00145CBD10054E2161FA484F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya_test/Pods-Moya_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya_test/Pods-Moya_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moya_test/Pods-Moya_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18344847563B2B8C351F95A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moya_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		75383ED224F4EB4600ADA8F0 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		75383EEB24F4EB4800ADA8F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25CD02DC4EBBB4B5F830AB5E /* Pods-Moya_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		75383EEC24F4EB4800ADA8F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B08824A23FF05CC44A2D17 /* Pods-Moya_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

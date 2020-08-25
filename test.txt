@@ -1,5 +1,0 @@
-git is free software distributed under the GPL
-
-my boss still prefers SVN
-my stupid boss still prefers SVN.
-
